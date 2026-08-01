@@ -1,3 +1,4 @@
+name: Gendexgrasp
 channels:
   - pytorch
   - defaults

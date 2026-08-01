@@ -465,7 +465,7 @@ if __name__ == '__main__':
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     from utils.get_models import get_handmodel
     from utils.visualize_plotly import plot_point_cloud
-    hand_model = get_handmodel('robotiq_3finger_real_robot', 1, 'cuda', 1.)
+    hand_model = get_handmodel('shadowhand', 1, 'cuda', 1.)
     print(len(hand_model.robot.get_joint_parameter_names()))
 
     joint_lower = np.array(hand_model.revolute_joints_q_lower.cpu().reshape(-1))

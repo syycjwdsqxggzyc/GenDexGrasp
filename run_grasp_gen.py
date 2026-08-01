@@ -9,7 +9,7 @@ import torch
 import plotly.graph_objects as go
 from utils.visualize_plotly import plot_point_cloud, plot_point_cloud_cmap, plot_mesh_from_name
 from utils.set_seed import set_global_seed
-from torch.utils.tensorboard import SummaryWriter
+from torch.utils.tensorboard.writer import SummaryWriter
 
 
 def get_parser():

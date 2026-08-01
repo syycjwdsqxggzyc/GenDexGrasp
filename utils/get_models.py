@@ -27,8 +27,8 @@ if __name__ == '__main__':
     # plot hand mesh and surface points + normals
     vis_data = hand_model.get_plotly_data(q=init_opt_q, color='pink')
     vis_data.append(plot_point_cloud(pts=surface_points.cpu().squeeze(0), color='red'))
-    for i in range(10):
-        vis_data.append(plot_point_cloud(pts=(surface_points + 0.001 * i * surface_normals).cpu().squeeze(0), color='blue'))
+    # for i in range(10):
+    #     vis_data.append(plot_point_cloud(pts=(surface_points + 0.001 * i * surface_normals).cpu().squeeze(0), color='blue'))
 
     fig = go.Figure(data=vis_data)
     fig.show()

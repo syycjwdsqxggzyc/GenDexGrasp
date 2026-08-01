@@ -180,7 +180,7 @@ class PointNetCVAE(nn.Module):
 
 if __name__ == '__main__':
     device = 'cuda'
-    mode = 'test'
+    mode = 'train'
     model = PointNetCVAE()
 
     if mode == 'train':

@@ -5,7 +5,7 @@ import time
 from utils_data.CMapDataset import CMapDataset
 from utils_model.PointNetCVAE import PointNetCVAE
 from torch.utils.data import DataLoader
-from torch.utils.tensorboard import SummaryWriter
+from torch.utils.tensorboard.writer import SummaryWriter
 from utils.set_seed import set_global_seed
 from train_cvae_criterion import VAECriterion, VAEAttnCriterion
 from plotly import graph_objects as go
